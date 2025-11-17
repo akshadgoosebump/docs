@@ -22,7 +22,7 @@
     "primary": {
       "type": "button",
       "label": "Get Started",
-      "href": "/introduction/quickstart"
+      "href": "https://app.erlin.ai/onboarding"
     }
   },
   "navigation": {
