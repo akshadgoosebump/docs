@@ -7,23 +7,23 @@
     "light": "#3d5ffe",
     "dark": "#0827c4"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Website",
-        "href": "https://erlin.ai"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Get Started",
-      "href": "https://app.erlin.ai/onboarding"
+  "topbarLinks": [
+    {
+      "name": "Website",
+      "url": "https://erlin.ai"
     }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://app.erlin.ai/onboarding"
+  },
+  "sidebar": {
+    "items": "border"
   },
   "navigation": {
     "tabs": [
@@ -61,25 +61,7 @@
           {
             "group": "Brand Analytics",
             "pages": [
-              "features/analytics/overview",
-              "features/analytics/brand-monitoring",
-              "features/analytics/competitor-analysis"
-            ]
-          },
-          {
-            "group": "Brand Management",
-            "pages": [
-              "features/brand/company-profile",
-              "features/brand/icp-definition",
-              "features/brand/brand-voice"
-            ]
-          },
-          {
-            "group": "SEO & Analytics",
-            "pages": [
-              "features/seo/website-audit",
-              "features/seo/keyword-research",
-              "features/seo/performance-monitoring"
+              "features/analytics/overview"
             ]
           }
         ]
@@ -90,45 +72,7 @@
           {
             "group": "Dashboard",
             "pages": [
-              "platform/dashboard/overview",
-              "platform/dashboard/widgets",
-              "platform/dashboard/customization"
-            ]
-          },
-          {
-            "group": "Content Library",
-            "pages": [
-              "platform/content-library/organization",
-              "platform/content-library/search-filter",
-              "platform/content-library/export"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "platform/integrations/google-analytics",
-              "platform/integrations/seo-tools"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "api-reference/introduction",
-              "api-reference/authentication",
-              "api-reference/rate-limits"
-            ]
-          },
-          {
-            "group": "Endpoints",
-            "pages": [
-              "api-reference/endpoints/content",
-              "api-reference/endpoints/analytics",
-              "api-reference/endpoints/brand"
+              "platform/dashboard/overview"
             ]
           }
         ]
