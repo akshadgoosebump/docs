@@ -12,15 +12,18 @@
     "light": "#3d5ffe",
     "dark": "#0827c4"
   },
-  "topbarLinks": [
-    {
-      "name": "Website",
-      "url": "https://erlin.ai"
+  "navbar": {
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://erlin.ai"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Get Started",
+      "href": "https://app.erlin.ai/onboarding"
     }
-  ],
-  "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://app.erlin.ai/onboarding"
   },
   "navigation": {
     "tabs": [
@@ -87,7 +90,9 @@
       }
     ]
   },
-  "footerSocials": {
-    "website": "https://erlin.ai"
+  "footer": {
+    "socials": {
+      "website": "https://erlin.ai"
+    }
   }
 }
