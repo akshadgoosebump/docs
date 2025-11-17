@@ -4,7 +4,9 @@
   "theme": "palm",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "height": 80,
+    "width": 208
   },
   "favicon": "/favicon.ico",
   "colors": {
