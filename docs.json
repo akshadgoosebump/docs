@@ -1,16 +1,15 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
   "name": "Erlin AI",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.ico",
   "colors": {
     "primary": "#0d37fd",
     "light": "#3d5ffe",
     "dark": "#0827c4"
-  },
-  "favicon": "/favicon.ico",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "topbarLinks": [
     {
@@ -21,9 +20,6 @@
   "topbarCtaButton": {
     "name": "Get Started",
     "url": "https://app.erlin.ai/onboarding"
-  },
-  "sidebar": {
-    "items": "border"
   },
   "navigation": {
     "tabs": [
@@ -90,21 +86,7 @@
       }
     ]
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
-  "footer": {
-    "socials": {
-      "website": "https://erlin.ai"
-    }
+  "footerSocials": {
+    "website": "https://erlin.ai"
   }
 }
