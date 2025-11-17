@@ -1,0 +1,189 @@
+---
+title: "API Introduction"
+description: "Get started with the Erlin AI API to integrate content generation and analytics into your applications"
+---
+
+# API Reference
+
+The Erlin AI API allows you to programmatically access all platform features, including content generation, brand analytics, and brand management.
+
+## Getting Started
+
+<CardGroup cols={2}>
+  <Card title="Authentication" icon="key" href="/api-reference/authentication">
+    Learn how to authenticate API requests
+  </Card>
+  <Card title="Rate Limits" icon="gauge" href="/api-reference/rate-limits">
+    Understanding API usage limits
+  </Card>
+  <Card title="Content API" icon="file-lines" href="/api-reference/endpoints/content">
+    Generate and manage content
+  </Card>
+  <Card title="Analytics API" icon="chart-line" href="/api-reference/endpoints/analytics">
+    Access brand analytics data
+  </Card>
+</CardGroup>
+
+## API Overview
+
+The Erlin AI API provides RESTful endpoints for:
+
+- **Content Generation** - Create articles programmatically
+- **Brand Analytics** - Retrieve analytics and insights
+- **Brand Management** - Manage company profiles and settings
+- **Content Library** - Access and manage your content
+
+## Base URL
+
+```
+https://api.erlin.ai/v1
+```
+
+## Authentication
+
+All API requests require authentication using an API key:
+
+```bash
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+  https://api.erlin.ai/v1/content
+```
+
+<Note>
+  API keys can be generated from your account settings. Keep your API keys secure and never expose them in client-side code.
+</Note>
+
+## Request Format
+
+The API accepts JSON-formatted requests:
+
+```json
+{
+  "article_type": "blog_post",
+  "topic": "Benefits of AI in Content Marketing",
+  "keywords": ["AI", "content marketing", "automation"],
+  "word_count": 1500
+}
+```
+
+## Response Format
+
+All responses are returned in JSON format:
+
+```json
+{
+  "status": "success",
+  "data": {
+    "article_id": "art_123456",
+    "content": "...",
+    "metadata": {
+      "word_count": 1523,
+      "created_at": "2025-11-17T12:00:00Z"
+    }
+  }
+}
+```
+
+## Rate Limits
+
+API usage is subject to rate limits based on your plan:
+
+| Plan | Requests per minute | Daily limit |
+|------|---------------------|-------------|
+| Free | 10 | 100 |
+| Pro | 60 | 1,000 |
+| Enterprise | Custom | Custom |
+
+## Error Handling
+
+The API uses standard HTTP status codes:
+
+- `200` - Success
+- `400` - Bad Request
+- `401` - Unauthorized
+- `429` - Rate Limit Exceeded
+- `500` - Server Error
+
+Example error response:
+
+```json
+{
+  "status": "error",
+  "error": {
+    "code": "rate_limit_exceeded",
+    "message": "You have exceeded your rate limit. Please try again later."
+  }
+}
+```
+
+## Available Endpoints
+
+<AccordionGroup>
+  <Accordion title="Content Endpoints" icon="file-lines">
+    - `POST /content/generate` - Generate new content
+    - `GET /content/{id}` - Retrieve content by ID
+    - `PUT /content/{id}` - Update existing content
+    - `DELETE /content/{id}` - Delete content
+    - `GET /content/list` - List all content
+  </Accordion>
+
+  <Accordion title="Analytics Endpoints" icon="chart-line">
+    - `GET /analytics/brand-mentions` - Get brand mentions
+    - `GET /analytics/competitors` - Competitor data
+    - `GET /analytics/trends` - Trend analysis
+    - `POST /analytics/custom` - Custom analysis query
+  </Accordion>
+
+  <Accordion title="Brand Endpoints" icon="building">
+    - `GET /brand/profile` - Get company profile
+    - `PUT /brand/profile` - Update company profile
+    - `GET /brand/voice` - Get brand voice analysis
+    - `PUT /brand/icp` - Update ICP definition
+  </Accordion>
+</AccordionGroup>
+
+## SDKs and Libraries
+
+We provide official SDKs for popular languages:
+
+- **JavaScript/TypeScript** - `npm install @erlin/sdk`
+- **Python** - `pip install erlin-sdk`
+- **PHP** - `composer require erlin/sdk`
+- **Ruby** - `gem install erlin-sdk`
+
+## Code Example
+
+```javascript
+const ErlinAI = require('@erlin/sdk');
+
+const client = new ErlinAI({
+  apiKey: 'your-api-key'
+});
+
+// Generate content
+const article = await client.content.generate({
+  type: 'blog_post',
+  topic: 'AI in Content Marketing',
+  keywords: ['AI', 'marketing', 'automation'],
+  wordCount: 1500
+});
+
+console.log(article.content);
+```
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Authentication" icon="key" href="/api-reference/authentication">
+    Set up API authentication
+  </Card>
+  <Card title="Content API" icon="file-lines" href="/api-reference/endpoints/content">
+    Generate content via API
+  </Card>
+  <Card title="Analytics API" icon="chart-line" href="/api-reference/endpoints/analytics">
+    Access analytics data
+  </Card>
+</CardGroup>
+
+<Info>
+  Need help? Check out our comprehensive API documentation or contact our developer support team.
+</Info>

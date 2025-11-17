@@ -1,42 +1,166 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Erlin AI Documentation",
+  "name": "Erlin AI",
   "colors": {
     "primary": "#0d37fd",
     "light": "#3d5ffe",
     "dark": "#0827c4"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://erlin.ai"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Get Started",
+      "href": "/introduction/quickstart"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Introduction",
         "groups": [
           {
             "group": "Getting Started",
             "pages": [
-              "index"
+              "index",
+              "introduction/overview",
+              "introduction/quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "introduction/how-it-works",
+              "introduction/key-features"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
+          {
+            "group": "Content Generation",
+            "pages": [
+              "features/content-generation/overview",
+              "features/content-generation/article-types",
+              "features/content-generation/workflow"
+            ]
+          },
+          {
+            "group": "Brand Analytics",
+            "pages": [
+              "features/analytics/overview",
+              "features/analytics/brand-monitoring",
+              "features/analytics/competitor-analysis"
+            ]
+          },
+          {
+            "group": "Brand Management",
+            "pages": [
+              "features/brand/company-profile",
+              "features/brand/icp-definition",
+              "features/brand/brand-voice"
+            ]
+          },
+          {
+            "group": "SEO & Analytics",
+            "pages": [
+              "features/seo/website-audit",
+              "features/seo/keyword-research",
+              "features/seo/performance-monitoring"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Platform",
+        "groups": [
+          {
+            "group": "Dashboard",
+            "pages": [
+              "platform/dashboard/overview",
+              "platform/dashboard/widgets",
+              "platform/dashboard/customization"
+            ]
+          },
+          {
+            "group": "Content Library",
+            "pages": [
+              "platform/content-library/organization",
+              "platform/content-library/search-filter",
+              "platform/content-library/export"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "platform/integrations/google-analytics",
+              "platform/integrations/seo-tools"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "api-reference/introduction",
+              "api-reference/authentication",
+              "api-reference/rate-limits"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/endpoints/content",
+              "api-reference/endpoints/analytics",
+              "api-reference/endpoints/brand"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "changelog/index"
             ]
           }
         ]
       }
     ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "website": "https://erlin.ai"
+    }
   }
 }
