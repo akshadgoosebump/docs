@@ -1,6 +1,6 @@
-# Erlinia Documentation
+# Erlin AI Documentation
 
-Official documentation for Erlinia, built with Mintlify.
+Official documentation for Erlin AI, built with Mintlify.
 
 ## Development
 

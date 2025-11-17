@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Erlinia Documentation",
+  "name": "Erlin AI Documentation",
   "colors": {
     "primary": "#0d37fd",
     "light": "#3d5ffe",
